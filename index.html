@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="titleBar">
+      <div class="titleBarWindowIcons">
+        <div class="icon" data-icon="minimize">
+          <svg
+            viewBox="0 0 187 187"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              y="94"
+              width="6.99999"
+              height="187"
+              transform="rotate(-90 0 94)"
+              fill="black"
+            />
+          </svg>
+        </div>
+
+        <div class="icon" data-icon="maximize">
+          <svg
+            viewBox="0 0 187 187"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 0V187H187V0H0ZM180 7H7V180H180V7Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+
+        <div class="icon" data-icon="close">
+          <svg
+            viewBox="0 0 187 187"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.00004 9.33825L10.9498 4.3885L186.522 179.961L181.573 184.911L6.00004 9.33825Z"
+              fill="black"
+            />
+            <path
+              d="M181.573 3L186.522 7.94975L10.9497 183.522L6 178.572L181.573 3Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="dropzone"></div>
+
+    <script src="renderer.js" type="module"></script>
+    <script src="titleBarRenderer.js"></script>
+  </body>
+</html>
