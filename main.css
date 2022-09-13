@@ -157,3 +157,9 @@ svg {
   height: 2rem;
   background-color: rgb(89, 255, 0);
 }
+
+.effectsBtn {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(255, 0, 187);
+}

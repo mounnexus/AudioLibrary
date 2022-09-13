@@ -1,4 +1,5 @@
-import { Track } from "./track.js"
+import { ipcRenderer } from "electron"
+import { Track } from "track.js"
 
 const dropZone = document.querySelector("#dropzone")
 
@@ -26,6 +27,7 @@ dropZone.addEventListener("drop", async (e) => {
       <div class="playBtn">play</div>
       <div class="pauseBtn">pause</div>
       <div class="stopBtn">stop</div>
+      <div class="effectsBtn">effects</div>
     </div>`
 
       dropZone.innerHTML += musicItem
@@ -38,6 +40,15 @@ dropZone.addEventListener("drop", async (e) => {
       })
       document.querySelector(".stopBtn").addEventListener("click", () => {
         track.stop()
+      })
+
+      document.querySelector(".effectsBtn").addEventListener("click", () => {
+        /*    window.api.effectsWindowOpened("item:effectsWindowOpened")
+        ipcRenderer.on("item:effectsWindowOpened", (e, data) => {
+          if (data) {
+            window.api.effectsWindow("item:effectsWindow")
+          }
+        }) */
       })
     } else {
       dropZone.innerHTML += `<img width="400px" height="400px" src="${filePath}">`
